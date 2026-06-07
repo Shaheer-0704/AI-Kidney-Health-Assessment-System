@@ -1,7 +1,12 @@
-AI Kidney Health Assessment System
-Project Overview
+# AI Kidney Health Assessment System
 
-The AI Kidney Health Assessment System is an intelligent healthcare analytics application designed to assess Chronic Kidney Disease (CKD) risk using Artificial Intelligence and clinical rule-based analysis.
+## Project Overview
+
+The **AI Kidney Health Assessment System** is an intelligent healthcare analytics application designed to assess **Chronic Kidney Disease (CKD)** risk using a combination of **Artificial Intelligence** and **clinical rule-based analysis**.
+
+The system provides an end-to-end kidney health assessment by combining machine learning predictions with clinical insights to generate comprehensive reports and recommendations.
+
+---
 
 ## Application Screenshots
 
@@ -11,72 +16,91 @@ The AI Kidney Health Assessment System is an intelligent healthcare analytics ap
 
 ### Assessment Interface
 
-![Assessment](screenshots/assessment_page.png)
+![Assessment Interface](screenshots/assessment_page.png)
 
 ### Results Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Results Dashboard](screenshots/dashboard.png)
 
 ### PDF Report
 
 ![PDF Report](screenshots/pdf_report.png)
 
+---
+
+## Key Features
+
 The system combines:
 
-Artificial Neural Network (ANN) Prediction
-eGFR Calculation
-CKD Stage Classification
-Clinical Findings Analysis
-Reliability Assessment
-AI–Clinical Agreement Analysis
-Personalized Recommendations
-PDF Report Generation
+* Artificial Neural Network (ANN) Prediction
+* eGFR Calculation
+* CKD Stage Classification
+* Clinical Findings Analysis
+* Reliability Assessment
+* AI–Clinical Agreement Analysis
+* Personalized Recommendations
+* PDF Report Generation
 
-The application is built using Python, TensorFlow, Scikit-Learn, and Streamlit.
+The application is built using **Python**, **TensorFlow**, **Scikit-Learn**, and **Streamlit**.
 
-Features
-AI-Based CKD Prediction
+---
 
-Predicts the probability of Chronic Kidney Disease using a trained Artificial Neural Network.
+## Features
 
-Kidney Function Assessment
+### AI-Based CKD Prediction
 
-Calculates Estimated Glomerular Filtration Rate (eGFR) and classifies CKD stage.
+Predicts the probability of Chronic Kidney Disease using a trained Artificial Neural Network (ANN).
 
-Clinical Analysis Engine
+### Kidney Function Assessment
+
+Calculates Estimated Glomerular Filtration Rate (eGFR) and classifies CKD stage based on internationally accepted guidelines.
+
+### Clinical Analysis Engine
 
 Analyzes:
 
-Urine Parameters
-Blood Parameters
-Kidney Function Indicators
-Medical Risk Factors
-Reliability Assessment
+* Urine Parameters
+* Blood Parameters
+* Kidney Function Indicators
+* Medical Risk Factors
 
-Evaluates prediction reliability and confidence.
+### Reliability Assessment
 
-AI–Clinical Agreement Analysis
+Evaluates prediction reliability and confidence using multiple validation checks.
 
-Compares AI prediction with clinical findings to improve interpretability.
+### AI–Clinical Agreement Analysis
 
-PDF Report Generation
+Compares AI predictions with clinical findings to improve transparency and interpretability.
+
+### PDF Report Generation
 
 Generates a detailed kidney health assessment report including:
 
-Patient Information
-Laboratory Parameters
-Clinical Findings
-Recommendations
-Overall Assessment
-Technology Stack
-Component	Technology
-Frontend	Streamlit
-Backend	Python
-AI Model	TensorFlow / Keras
-Machine Learning	Scikit-Learn
-Data Processing	Pandas, NumPy
-Reporting	ReportLab
-Project Architecture
+* Patient Information
+* Laboratory Parameters
+* Clinical Findings
+* Risk Factors
+* Recommendations
+* Overall Assessment
+
+---
+
+## Technology Stack
+
+| Component        | Technology         |
+| ---------------- | ------------------ |
+| Frontend         | Streamlit          |
+| Backend          | Python             |
+| AI Model         | TensorFlow / Keras |
+| Machine Learning | Scikit-Learn       |
+| Data Processing  | Pandas, NumPy      |
+| Reporting        | ReportLab          |
+
+---
+
+## Project Architecture
+
+```text
 Patient Inputs
       ↓
 Data Validation
@@ -91,52 +115,122 @@ CKD Stage Classification
       ↓
 Reliability Assessment
       ↓
+AI–Clinical Agreement Analysis
+      ↓
 Recommendations
       ↓
 PDF Report Generation
-Project Structure
+```
+
+---
+
+## Project Structure
+
+```text
 AI_Kidney_Health_System/
 │
 ├── app.py
 ├── kidney_engine.py
 ├── pdf_generator.py
 │
-├── ann_model.keras
-├── scaler.pkl
+├── kidney_health_ann.keras
+├── kidney_scaler.pkl
+│
+├── ckd_model_training.ipynb
+├── kidney_disease.csv
 │
 ├── requirements.txt
 ├── README.md
 │
 └── screenshots/
-Installation
+    ├── home_page.png
+    ├── assessment_page.png
+    ├── dashboard.png
+    └── pdf_report.png
+```
 
-Clone the repository:
+---
 
-git clone <repository-url>
+## Installation
 
-Move into the project directory:
+### Clone the Repository
 
-cd AI_Kidney_Health_System
+```bash
+git clone https://github.com/Shaheer-0704/AI-Kidney-Health-Assessment-System.git
+```
 
-Install dependencies:
+### Navigate to the Project Directory
 
+```bash
+cd AI-Kidney-Health-Assessment-System
+```
+
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-Run the application:
+### Run the Application
 
+```bash
 streamlit run app.py
-Future Scope
-Multi-Disease Health Assessment
-Cloud Deployment
-Electronic Health Record Integration
-Explainable AI (XAI)
-Mobile Application Support
-Developer
+```
 
-Syed Shaheer Hussain
+---
+
+## Dataset
+
+This project uses the **UCI Chronic Kidney Disease Dataset** for training and evaluation of the Artificial Neural Network model.
+
+Dataset Features Include:
+
+* Demographic Information
+* Urine Test Parameters
+* Blood Test Parameters
+* Kidney Function Indicators
+* Clinical Risk Factors
+
+---
+
+## Future Scope
+
+* Multi-Disease Health Assessment Platform
+* Cloud-Based Healthcare Analytics
+* Electronic Health Record (EHR) Integration
+* Explainable AI (XAI) Support
+* Mobile Application Development
+* Real-Time Clinical Decision Support
+
+---
+
+## Disclaimer
+
+This application is intended for **educational and research purposes only**.
+
+The predictions and recommendations generated by the system should **not be considered a substitute for professional medical diagnosis, treatment, or advice**.
+
+Always consult qualified healthcare professionals for medical decisions.
+
+---
+
+## Developer
+
+**Syed Shaheer Hussain**
 
 B.Tech Electronics & Communication Engineering
 
 VIT-AP University
 
 AI + Healthcare Analytics Project
+
+---
+
+## Acknowledgements
+
+* UCI Machine Learning Repository
+* TensorFlow
+* Scikit-Learn
+* Streamlit
+* ReportLab
+* Open Source AI Community
