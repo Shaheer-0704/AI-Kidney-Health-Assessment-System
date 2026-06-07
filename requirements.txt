@@ -1,11 +1,10 @@
-streamlit==1.55.0
+streamlit
 
-pandas==2.3.3
-numpy==2.2.6
+pandas
+numpy
 
-scikit-learn==1.7.2
+scikit-learn
 
-tensorflow==2.21.0
-keras==3.12.1
+tensorflow
 
-reportlab==4.5.1
+reportlab
